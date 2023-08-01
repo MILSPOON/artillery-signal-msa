@@ -92,7 +92,7 @@ main{
 }
 
 .selNum{
-    font-size: 20vw;
+    font-size: 18vw;
     font-weight: 600;
 }
 
@@ -104,7 +104,7 @@ main{
 }
 
 .camNum{
-    font-size: 20vw;
+    font-size: 18vw;
     font-weight: 600;
 }
 
@@ -143,12 +143,12 @@ nav>a{
 }
 
 .camHan, .selHan {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 700;
 }
 
 
 .correct{
     display: none;
-    font-size: 9vw
+    font-size: 7vw
 }
