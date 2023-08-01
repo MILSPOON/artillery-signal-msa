@@ -108,6 +108,27 @@ main{
     font-weight: 600;
 }
 
+nav{
+    max-width: 412px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    bottom: 0px;
+}
+
+nav>a{
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
 .selNumText, .camNumText{
     width: 20vw;
     display: flex;

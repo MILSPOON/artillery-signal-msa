@@ -36,6 +36,8 @@ let isAnimating = false; // 변수를 추가하여 애니메이션이 진행 중
 const selHanElement = document.querySelector(".selHan");
 const camHanElement = document.querySelector(".camHan");
 
+const jingle = new Audio('./static/jingle.mp3')
+
 function hideCorrectElement() {
   const correctElement = document.querySelector(".correct");
   const selNumElement = document.querySelector(".selNum")
@@ -50,6 +52,7 @@ function showCorrectElement() {
   const correctElement = document.querySelector(".correct");
   const selNumElement = document.querySelector(".selNum")
   correctElement.style.display = "block"
+  jingle.play()
   selHanElement.style.color = "white"
   selNumElement.style.color = "white"
   isAnimating = true; // 애니메이션이 진행 중임을 표시합니다.
@@ -218,6 +221,8 @@ function speakHan() {
   const utterThis = new SpeechSynthesisUtterance(selHanElement.textContent)
   utterThis.lang = "ko-KR"
   utterThis.volume = 1;
+  utterThis.pitch = 1.1;
+  utterThis.rate = 0.8;
   synth.speak(utterThis)
 }
 
